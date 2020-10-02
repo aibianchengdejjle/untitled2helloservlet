@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>helloservlet</servlet-name>
+    <servlet-class>com.jjl.servlet.helloservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>helloservlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getc</servlet-name>
+    <servlet-class>com.jjl.servlet.getservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getc</servlet-name>
+    <url-pattern>/wc</url-pattern>
+  </servlet-mapping>
+<!--  完成跳转-->
+  <servlet>
+    <servlet-name>gp</servlet-name>
+    <servlet-class>com.jjl.servlet.servletdemo</servlet-class>
+  </servlet>
+<!--  用于消息的转发 当用户输入gp时会进入servletdemo当中可是demo又执行了跳转语句跳转到/wc即getservlet当中-->
+  <servlet-mapping>
+    <servlet-name>gp</servlet-name>
+    <url-pattern>/gp</url-pattern>
+  </servlet-mapping>
+</web-app>
