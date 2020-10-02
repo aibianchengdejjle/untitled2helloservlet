@@ -19,4 +19,12 @@
         <servlet-name>image</servlet-name>
         <url-pattern>/image</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>redire</servlet-name>
+        <servlet-class>com.jjl.servlet.Redire</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redire</servlet-name>
+        <url-pattern>/redire</url-pattern>
+    </servlet-mapping>
 </web-app>
