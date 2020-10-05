@@ -1,5 +1,4 @@
 package com.jjl.servlet;
-
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,7 +8,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Random;
-
 public class imageservlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -46,6 +44,5 @@ public class imageservlet extends HttpServlet {
         //必定是4位不是的话就用0填充
         s=sb.toString()+s;
         return s;
-
     }
 }
